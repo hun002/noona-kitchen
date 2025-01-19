@@ -11,7 +11,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/noona-kitchen-favicon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="korea1.css" rel="stylesheet"  type="text/css" />
+    <link href="korea1-login.css" rel="stylesheet"  type="text/css" />
 </head>
 <body>
   <nav class="main1-container">
@@ -19,20 +19,21 @@
     <div class="main1-first-line container">
       <div class="row">
       <h1>
-        <a href="/index.html" class="main1-logo col-lg-6 col-md-6 col-sm-6"></a>
+        <a href="../index.html" class="main1-logo col-lg-6 col-md-6 col-sm-6"></a>
       </h1>
       <div class="container-fluid main1-input-area col-lg-6 col-md-6 ">
         <form class="frm-nav-search" >
-          <input class="main1-input-area2 main1-input-area-dis2" type="text" style="color:  #FBFFDA;" maxlength="26" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN의 비밀 레시피 검색하기 (예:샌드위치)">
-          <input class="main1-input-area2 main1-input-area-dis" type="text" style="color:  #FBFFDA;" maxlength="15" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN 레시피 검색하기">
+            <!-- style="color:  #FBFFDA; -->
+          <input class="main1-input-area2 main1-input-area-dis2" type="text" " maxlength="26" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN의 비밀 레시피 검색하기 (예:샌드위치)">
+          <input class="main1-input-area2 main1-input-area-dis" type="text" maxlength="15" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN 레시피 검색하기">
           <i class="fa-solid fa-magnifying-glass main1-search-icon"></i>
           <i class="fa-solid fa-magnifying-glass main1-search-icon2"></i>
 
           <div class="min-category2">
-            <a href="../category1/index.html">
+            <a href="#">
               <i class="fa-solid fa-bars icon-box main1-icon-category" style="color: white;"></i>
             </a>
-            <a href="../log-in/log-in.html">
+            <a href="#">
               <i class="fa-solid fa-user icon-box main1-icon-category" style="color: white;"></i>
             </a>
           </div>
@@ -41,7 +42,7 @@
     </div>
     </div>
   </nav>
-  
+
   <div class="main1-second-line">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="collapse navbar-collapse container" id="navbarNavDropdown">
@@ -49,46 +50,53 @@
             <div class="navbar-nav">
               <div class="main1-category-space">
                 <div class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle nav-second-line-son" href="../category1/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle nav-second-line-son" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-bars icon-box" style="color: white;"></i>
                     <span class="dis-none">카테고리</span>
                   </a>
                   <div class="dropdown-menu mega-dropdown-menu row">
                     <div class="main1-category-area1">
-                        <div><a href="../category1/kindex.html">한식</a></div>
+                        <div><a href="#">종류</a></div>
 
-                        <div><a href="../category1/cindex.html">중식</a></div>
+                        <div><a href="#">재료</a></div>
                     
-                        <div><a href="../category1/jindex.html">일식</a></div>
+                        <div><a href="#">방법</a></div>
                     
-                        <div><a href="../category1/dindex.html">디저트</a></div>
+                        <div><a href="#">테마</a></div>
+                    
+                        <div><a href="#">기념일</a></div>
+                    
+                        <div><a href="#">도구</a></div>
                     </div>
                     <div class="main1-category-area2">
-                        <div><a href="../category1/index.html">#덮밥</a></div>
-                        <div><a href="../category1/index.html">#마라</a></div>
-                        <div><a href="../category1/index.html">#국물</a></div>
-                        <div><a href="../category1/index.html">#요린이</a></div>
+                        <div><a href="#">#분식</a></div>
+                        <div><a href="#">#브런치</a></div>
+                        <div><a href="#">#집밥</a></div>
+                        <div><a href="#">#치즈듬뿍</a></div>
+                        <div><a href="#">#캠핑</a></div>
+                        <div><a href="#">#간단 꿀조합</a></div>
                     </div>
                     <div class="main1-category-area3">
                       <i class="fa-solid fa-plus icon-box2" style="color: #FBFFDA;"></i>
-                      <a href="../category1/index.html" style="padding-bottom: 3px;"><i></i>카테고리 전체보기</a>
+                      <a href="#" style="padding-bottom: 3px;"><i></i>카테고리 전체보기</a>
                     </div>
                   </div>
                 </div>
               </div>
-
-                <div class="nav-item nav-second-line-son">
-                  <a class="nav-link active dis-none main1-category-item" aria-current="page" 
-                  href="../log-in/log-in.html" style="width: 130px;">즐겨찾기</a>
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end btn-mom main1-second-btn">
-                  <button class="btn btn-primary me-md-2 main1-second-line-btn" style="width: 100px;" 
-                  type="button" onclick="window.location.href='../log-in/log-in.html';">로그인</button>
-                  <button class="btn btn-primary main1-second-line-btn" style="width: 100px;"
-                   type="button" onclick="window.location.href='../sign-up/sign-up.html';">회원가입</button>
-                </div>
+            </div>
+          </div>
+            <div class="nav-item nav-second-line-son">
+              <a class="nav-link active dis-none main1-category-item" aria-current="page" 
+              href="../category1/bookmark.html" style="width: 130px;">즐겨찾기</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-end user-info-container">
+                <span class="welcome-message" style="font-size: 16px; margin-right: 10px;">코알누 고객님 환영합니다</span>
+                <img src="assets/profile-icon.png" alt="프로필 사진" 
+                     style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
+                <button class="btn btn-primary main1-second-line-btn logout-btn"
+                        type="button" onclick="window.location.href='../index.html';">로그아웃</button>
               </div>
-
+          </div>
         </div>
       </div>
     </nav>
@@ -236,7 +244,7 @@
         <div id="relatedRecipes" class="relatedRecipeArea">
             <h2 class="relatedRecipe-title">관련 레시피</h2>
 
-            <a href="../china1/china2.html"> <!-- 이동할 페이지의 URL -->
+            <a href="../china1/china2-login.html"> <!-- 이동할 페이지의 URL -->
             <img src="../china1/assets/china2-main.png" class="full-width-image"/>
             </a>
                 <p class="relatedRecipeContent">
@@ -259,7 +267,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="korea1.html"> <!-- 이동할 페이지의 URL -->
+                        <a href="korea1-lolgin.html"> <!-- 이동할 페이지의 URL -->
                         <img src="assets/korea1-main.jpg" class="full-width-image"/>
                         </a>
                             <ul class="recommended-recipe-Content">
@@ -273,7 +281,7 @@
                         </h2>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="korea2.html"> <!-- 이동할 페이지의 URL -->
+                        <a href="korea2-login.html"> <!-- 이동할 페이지의 URL -->
                         <img src="assets/korea2-main.png" class="full-width-image"/>
                         </a>
                             <ul class="recommended-recipe-Content">
@@ -286,7 +294,7 @@
                         </h2>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="korea4.html"> <!-- 이동할 페이지의 URL -->
+                        <a href="korea4-login.html"> <!-- 이동할 페이지의 URL -->
                         <img src="assets/korea4-main.png" class="full-width-image"/>
                         </a>
                             <ul class="recommended-recipe-Content">
@@ -299,7 +307,7 @@
                         </h2>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="korea5.html"> <!-- 이동할 페이지의 URL -->
+                        <a href="korea5-login.html"> <!-- 이동할 페이지의 URL -->
                         <img src="assets/korea5-main.png" class="full-width-image"/>
                         </a>
                             <ul class="recommended-recipe-Content">
@@ -347,11 +355,11 @@
 
     <!-- footer -->
     <footer>
-        <div class ="footer-content footer-container-fluid">
-          <div>
-            <a class ="foot-first-line" href="../log-in/log-in.html">즐겨찾기</a>
-          </div>
+      <div class ="footer-content footer-container-fluid">
+        <div>
+          <a class ="foot-first-line" href="../category1/bookmark.html">즐겨찾기</a>
         </div>
+      </div>
       
         <div class ="second-content footer-container-fluid">
           <div class ="footer-row" >

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>흑임자 다식 | NoonaKitchen</title>
+    <title>히야시츄카 | Noonakitchen</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -11,7 +11,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/noona-kitchen-favicon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="korea1.css" rel="stylesheet"  type="text/css" />
+    <link href="../korea1/korea1-login.css" rel="stylesheet"  type="text/css" />
 </head>
 <body>
   <nav class="main1-container">
@@ -19,20 +19,21 @@
     <div class="main1-first-line container">
       <div class="row">
       <h1>
-        <a href="/index.html" class="main1-logo col-lg-6 col-md-6 col-sm-6"></a>
+        <a href="../index.html" class="main1-logo col-lg-6 col-md-6 col-sm-6"></a>
       </h1>
       <div class="container-fluid main1-input-area col-lg-6 col-md-6 ">
         <form class="frm-nav-search" >
-          <input class="main1-input-area2 main1-input-area-dis2" type="text" style="color:  #FBFFDA;" maxlength="26" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN의 비밀 레시피 검색하기 (예:샌드위치)">
-          <input class="main1-input-area2 main1-input-area-dis" type="text" style="color:  #FBFFDA;" maxlength="15" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN 레시피 검색하기">
+            <!-- style="color:  #FBFFDA; -->
+          <input class="main1-input-area2 main1-input-area-dis2" type="text" " maxlength="26" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN의 비밀 레시피 검색하기 (예:샌드위치)">
+          <input class="main1-input-area2 main1-input-area-dis" type="text" maxlength="15" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN 레시피 검색하기">
           <i class="fa-solid fa-magnifying-glass main1-search-icon"></i>
           <i class="fa-solid fa-magnifying-glass main1-search-icon2"></i>
 
           <div class="min-category2">
-            <a href="../category1/index.html">
+            <a href="#">
               <i class="fa-solid fa-bars icon-box main1-icon-category" style="color: white;"></i>
             </a>
-            <a href="../log-in/log-in.html">
+            <a href="#">
               <i class="fa-solid fa-user icon-box main1-icon-category" style="color: white;"></i>
             </a>
           </div>
@@ -41,7 +42,7 @@
     </div>
     </div>
   </nav>
-  
+
   <div class="main1-second-line">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="collapse navbar-collapse container" id="navbarNavDropdown">
@@ -49,100 +50,105 @@
             <div class="navbar-nav">
               <div class="main1-category-space">
                 <div class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle nav-second-line-son" href="../category1/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle nav-second-line-son" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-bars icon-box" style="color: white;"></i>
                     <span class="dis-none">카테고리</span>
                   </a>
                   <div class="dropdown-menu mega-dropdown-menu row">
                     <div class="main1-category-area1">
-                        <div><a href="../category1/kindex.html">한식</a></div>
+                        <div><a href="#">종류</a></div>
 
-                        <div><a href="../category1/cindex.html">중식</a></div>
+                        <div><a href="#">재료</a></div>
                     
-                        <div><a href="../category1/jindex.html">일식</a></div>
+                        <div><a href="#">방법</a></div>
                     
-                        <div><a href="../category1/dindex.html">디저트</a></div>
+                        <div><a href="#">테마</a></div>
+                    
+                        <div><a href="#">기념일</a></div>
+                    
+                        <div><a href="#">도구</a></div>
                     </div>
                     <div class="main1-category-area2">
-                        <div><a href="../category1/index.html">#덮밥</a></div>
-                        <div><a href="../category1/index.html">#마라</a></div>
-                        <div><a href="../category1/index.html">#국물</a></div>
-                        <div><a href="../category1/index.html">#요린이</a></div>
+                        <div><a href="#">#분식</a></div>
+                        <div><a href="#">#브런치</a></div>
+                        <div><a href="#">#집밥</a></div>
+                        <div><a href="#">#치즈듬뿍</a></div>
+                        <div><a href="#">#캠핑</a></div>
+                        <div><a href="#">#간단 꿀조합</a></div>
                     </div>
                     <div class="main1-category-area3">
                       <i class="fa-solid fa-plus icon-box2" style="color: #FBFFDA;"></i>
-                      <a href="../category1/index.html" style="padding-bottom: 3px;"><i></i>카테고리 전체보기</a>
+                      <a href="#" style="padding-bottom: 3px;"><i></i>카테고리 전체보기</a>
                     </div>
                   </div>
                 </div>
               </div>
-
-                <div class="nav-item nav-second-line-son">
-                  <a class="nav-link active dis-none main1-category-item" aria-current="page" 
-                  href="../log-in/log-in.html" style="width: 130px;">즐겨찾기</a>
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end btn-mom main1-second-btn">
-                  <button class="btn btn-primary me-md-2 main1-second-line-btn" style="width: 100px;" 
-                  type="button" onclick="window.location.href='../log-in/log-in.html';">로그인</button>
-                  <button class="btn btn-primary main1-second-line-btn" style="width: 100px;"
-                   type="button" onclick="window.location.href='../sign-up/sign-up.html';">회원가입</button>
-                </div>
+            </div>
+          </div>
+            <div class="nav-item nav-second-line-son">
+              <a class="nav-link active dis-none main1-category-item" aria-current="page" 
+              href="../category1/bookmark.html" style="width: 130px;">즐겨찾기</a>
+            </div>
+            <div class="d-flex align-items-center justify-content-end user-info-container">
+                <span class="welcome-message" style="font-size: 16px; margin-right: 10px;">코알누 고객님 환영합니다</span>
+                <img src="assets/profile-icon.png" alt="프로필 사진" 
+                     style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
+                <button class="btn btn-primary main1-second-line-btn logout-btn"
+                        type="button" onclick="window.location.href='../index.html';">로그아웃</button>
               </div>
-
+          </div>
         </div>
       </div>
     </nav>
   </div>
 
-      <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
-            <img src="assets/korea3-main.png" class="full-width-main-image"/>
+            <img src="assets/china2-main.png" class="full-width-main-image"/>
         </div>
     </div>
 
     <div class="content">
         <div class="korea1-detailInfo">
-            <h1 class="food-title">흑임자 다식</h1>
+            <h1 class="food-title">히야시츄카</h1>
 
             <div class="korea1-Tag">
                 <ul>
                     <li>
-                        <a href="../category1/kindex.html">#한식</a>
+                        <a href="../category1/cindex.html">#중식</a>
                     </li>
                     <li>
-                        <a href="#">#디저트</a>
+                        <a href="#">#중국냉면</a>
                     </li>
                     <li>
-                        <a href="#">#명절</a>
+                        <a href="#">#중국식냉면</a>
                     </li>
                     <li>
-                        <a href="#">#베이킹</a>
+                        <a href="#">#여름</a>
                     </li>
                     <li>
-                        <a href="#">#티타임</a>
+                        <a href="#">#여름별미</a>
                     </li>
                     <li>
-                        <a href="#">#흑임자</a>
+                        <a href="#">#냉면</a>
                     </li>
+                    <li>
+                        <a href="#">#냉라멘</a>
+                    </li>
+                    
                 </ul>
             </div>
 
             <p>
-                다식(茶食)은 우리나라 고유의 과자로 옛날부터 잔칫상에 자주 올라가곤 했어요. 
-                이름 그대로 차와 어울리는 음식으로 밤다식, 흑임자다식, 송화다식, 녹말다식 등 
-                종류가 무궁무진 하답니다. 이번에는 오뚜기 옛날 볶음검은깨를 곱게 갈아 만드는 
-                흑임자다식 레시피를 소개해드려요. 짙은 색감이 보기에도 좋고, 고소한 맛도 
-                일품이랍니다.
             </p>
 
             <ul class="detailInfoNav">
-                <ul class="detailInfoNav">
-                    <li><a href="#ingredients">요리 재료</a></li>
-                    <li><a href="#howToMake">만드는 방법</a></li>
-                    <li><a href="#relatedProducts">관련 제품</a></li>
-                    <li><a href="#relatedRecipes">관련 레시피</a></li>
-                    <li><a href="#recommended-recipe">추천 레시피</a></li>
-                </ul>
+                <li><a href="#ingredients">요리 재료</a></li>
+                
+                <li><a href="#howToMake">만드는 방법</a></li>
+                <li><a href="#relatedProducts">관련 제품</a></li>
+                <li><a href="#relatedRecipes">관련 레시피</a></li>
+                <li><a href="#recommended-recipe">추천 레시피</a></li>
             </ul>
         </div>
 
@@ -155,8 +161,10 @@
             <dl>
             <dt class="ingredientContent"> - 필수 재료</dt>
                 <dd>
-                    오뚜기 옛날 볶음 검은깨 200g, 오뚜기 요리용 꿀 2T, 소금 1/2t
-
+                    옛날국수중면(500g)100g, 토마토1/2개(80g), 냉면육수1봉(330g), 
+                    오이2/3개(100g), 달걀2개, 슬라이스 햄4장(50g), 맛살60g, 
+                    고소한 참기름1t(3g), 연겨자1t(취향껏), 가쓰오부시장국2T(20g), 
+                    옛날 볶음참깨1t
                 </dd>
             </dl>
             
@@ -168,42 +176,52 @@
         <!-- 만드는 방법 -->
        <div id="howToMake" class="howToMakeArea">
            <h2 class="howToMake-title">만드는 방법</h2>
-           <img src="https://www.okitchen.co.kr/pds/editor/100_1.jpg" class="full-width-image"/>
+           <img src="https://www.okitchen.co.kr/pds/editor/358_1.jpg" class="full-width-image"/>
            <dl>
            <dt class="howToMakeContent"> Step 1 </dt>
                <dd>
-                    후라이팬에 깨가 뜨거워질 때까지 볶는다.
+                냉면육수에 참기름과 가쓰오부시장국, 연겨자를 섞어 차갑게 보관한다.
                </dd>
            </dl>
-           <img src="https://www.okitchen.co.kr/pds/editor/100_2.jpg" class="full-width-image"/>
+           <img src="https://www.okitchen.co.kr/pds/editor/358_2.jpg" class="full-width-image"/>
            <dl>
                <dt class="howToMakeContent"> Step 2 </dt>
                    <dd>
-                        믹서기에 뜨거운 깨와 소금을 곱게 간다.
+                    기름을 두른 후라이팬에 푼 달걀을 얇게 부어 약한 불에 지단을 부친다.
                    </dd>
            </dl>
-           <img src="https://www.okitchen.co.kr/pds/editor/100_3.jpg" class="full-width-image"/>
+           <img src="https://www.okitchen.co.kr/pds/editor/358_3.jpg" class="full-width-image"/>
            <dl>
                <dt class="howToMakeContent"> Step 3 </dt>
                    <dd>
-                        곱게 갈린 깨에 꿀을 넣고 반죽한다.
+                    지단은 한 김 식히고 돌돌 말아 채 썬다.
                    </dd>
            </dl>
-           <img src="https://www.okitchen.co.kr/pds/editor/100_4.jpg" class="full-width-image"/>
+           <img src="https://www.okitchen.co.kr/pds/editor/358_4.jpg" class="full-width-image"/>
            <dl>
            <dt class="howToMakeContent"> Step 4 </dt>
                <dd>
-                    다식판에 랩을 깔고 반죽한 깨를 눌러 모양낸다.
+                오이는 돌려 깎아 채 썰고 맛살은 잘게 찢어 비슷한 길이로 자른다. 
+                햄도 오이와 비슷한 두께로 채 썰고 토마토는 웻지 모양으로 자른다.
                </dd>
            </dl>
-           <img src="https://www.okitchen.co.kr/pds/editor/100_5.jpg" class="full-width-image"/>
+           <img src="https://www.okitchen.co.kr/pds/editor/358_5.jpg" class="full-width-image"/>
            <dl>
            <dt class="howToMakeContent"> Step 5 </dt>
                <dd>
-                    다식판에서 꺼내 그릇에 담아 완성한다.
+                중면은 끓는 물에 4분간 삶은 뒤 차가운 물에 반복해 씻어 물기를 제거한다.
                </dd>
            </dl>
-           <img src="https://www.okitchen.co.kr/pds/editor/100_6.jpg" class="full-width-image"/>
+           <img src="https://www.okitchen.co.kr/pds/editor/358_6.jpg" class="full-width-image"/>
+           <dl>
+           <dt class="howToMakeContent"> Step 6 </dt>
+               <dd>
+                그릇에 손질한 각종 재료들을 담고 면을 올린 뒤 차가운 육수를 붓고 깨를 뿌려 완성한다.
+                Tip. 취향에 따라 연겨자를 더해 먹으면 좋습니다!
+               </dd>
+           </dl>
+           <img src="https://www.okitchen.co.kr/pds/editor/358_7.jpg" class="full-width-image"/>
+
        </div>
 
         <!-- 중간에 구분선 추가 -->
@@ -214,11 +232,11 @@
 
             <div class="image-container">
                 
-                <img src="https://thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2019/11/29/17/8/2e223d02-8f65-490a-9121-e5f346e8653a.jpg" class="full-width-image"/>
+                <img src="https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/fa67/72593f0b9c2a650f22fb5457bf882644c185c9a4dca0f38505a89838d5d7.jpg" class="full-width-image"/>
                 <p class="goods-content">
-                    다식판
+                    중국식 젓가락
                 </p>
-                <a href="https://www.coupang.com/vp/products/345597003?itemId=1097573738&vendorItemId=5619873008&pickType=COU_PICK&q=%EB%8B%A4%EC%8B%9D%ED%8C%90&itemsCount=36&searchId=a5577c3a6412813&rank=2&searchRank=2&isAddedCart=" 
+                <a href="https://www.coupang.com/vp/products/260542615?itemId=815046750&vendorItemId=5073809768&q=%EC%A4%91%EA%B5%AD%EC%8B%9D%EC%A0%93%EA%B0%80%EB%9D%BD&itemsCount=36&searchId=d15da38411580534&rank=1&searchRank=1&isAddedCart=" 
                 target="_blank"> <!-- 이동할 페이지의 URL -->
                 <div class="overlay">
                     <div class="text-top">관련 제품은 누나몰과 인근 매장에서 구매 가능합니다</div>
@@ -236,14 +254,14 @@
         <div id="relatedRecipes" class="relatedRecipeArea">
             <h2 class="relatedRecipe-title">관련 레시피</h2>
 
-            <a href="../china1/china2.html"> <!-- 이동할 페이지의 URL -->
-            <img src="../china1/assets/china2-main.png" class="full-width-image"/>
+            <a href="../japan1/japan1-login.html"> <!-- 이동할 페이지의 URL -->
+            <img src="../japan1/assets/japan1-main.png" class="full-width-image"/>
             </a>
                 <p class="relatedRecipeContent">
-                    #중국냉면 #중국식냉면 #여름
+                    #다시마식초 #마제소바 #소바
                 </p>
                 <h2 class="relatedRecipe-name">
-                    히야시츄카
+                    마제소바
                 </h2>   
             
         </div>
@@ -259,56 +277,55 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="korea1.html"> <!-- 이동할 페이지의 URL -->
-                        <img src="assets/korea1-main.jpg" class="full-width-image"/>
+                        <a href="china1-login.html"> <!-- 이동할 페이지의 URL -->
+                        <img src="assets/china1-main.png" class="full-width-image"/>
                         </a>
                             <ul class="recommended-recipe-Content">
-                                <li>#한식</li>
-                                <li>#집밥</li>
-                                <li>#비빔밥</li>
-                                <li>#봄나물</li>
-                            </ul>
+                                <li>#사골</li>
+                                <li>#마라</li>
+                                <li>#훠궈</li>
+                            </ul> 
                         <h2 class="recommended-recipe-name">
-                            봄 된장 비빔밥
+                            사골 마라탕
                         </h2>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="korea2.html"> <!-- 이동할 페이지의 URL -->
-                        <img src="assets/korea2-main.png" class="full-width-image"/>
+                        <a href="china3-login.html"> <!-- 이동할 페이지의 URL -->
+                        <img src="assets/china3-main.png" class="full-width-image"/>
                         </a>
                             <ul class="recommended-recipe-Content">
-                                <li>#참나물</li>
-                                <li>#퀘사디야</li>
-                                <li>#퀘사디아</li>
+                                <li>#중식</li>
+                                <li>#오늘밥상</li>
+                                <li>#얼큰칼칼</li>
                             </ul>
                         <h2 class="recommended-recipe-name">
-                            참나물 퀘사디아
+                            마파가지덮밥
                         </h2>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="korea4.html"> <!-- 이동할 페이지의 URL -->
-                        <img src="assets/korea4-main.png" class="full-width-image"/>
+                        <a href="china4-login.html"> <!-- 이동할 페이지의 URL -->
+                        <img src="assets/china4-main.png" class="full-width-image"/>
                         </a>
                             <ul class="recommended-recipe-Content">
-                                <li>#밑반찬</li>
-                                <li>#매실청</li>
-                                <li>#단짠단짠</li>
+                                <li>#집들이</li>
+                                <li>#맥주안주</li>
+                                <li>#중식</li>
                             </ul>
                         <h2 class="recommended-recipe-name">
-                            호두마늘볶음
+                            크림새우
                         </h2>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <a href="korea5.html"> <!-- 이동할 페이지의 URL -->
-                        <img src="assets/korea5-main.png" class="full-width-image"/>
+                        <a href="china5-login.html"> <!-- 이동할 페이지의 URL -->
+                        <img src="assets/china5-main.png" class="full-width-image"/>
                         </a>
                             <ul class="recommended-recipe-Content">
-                                <li>#밑반찬</li>
-                                <li>#매실청</li>
-                                <li>#집밥</li>
+                                <li>#굴진짬뽕</li>
+                                <li>#따끈한국물</li>
+                                <li>#라면맛집</li>
                             </ul>
                         <h2 class="recommended-recipe-name">
-                            북어채 무침
+                            유산슬 라면
                         </h2>
                     </div>
                     
@@ -347,11 +364,11 @@
 
     <!-- footer -->
     <footer>
-        <div class ="footer-content footer-container-fluid">
-          <div>
-            <a class ="foot-first-line" href="../log-in/log-in.html">즐겨찾기</a>
-          </div>
+      <div class ="footer-content footer-container-fluid">
+        <div>
+          <a class ="foot-first-line" href="../category1/bookmark.html">즐겨찾기</a>
         </div>
+      </div>
       
         <div class ="second-content footer-container-fluid">
           <div class ="footer-row" >

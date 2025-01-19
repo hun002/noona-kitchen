@@ -228,12 +228,16 @@ nav a:hover{
 }
 
 .main1-category-item {
-  margin-right: 800px;
+    margin-right: 1200px;
 }
 
 .main1-second-btn {
   display: flex;
   justify-content: flex-end;
+}
+
+.text-line-first {
+    padding-left: 16%;
 }
 
 .main1-container2 {
@@ -250,15 +254,19 @@ nav a:hover{
       display: none;
   }
 
-  nav a{
-      text-decoration: none;
-      color: #454545;
-  }
-  
-  nav a:hover{
-      color: #AB392F;
-  }
-  
+    nav a{
+        text-decoration: none;
+        color: #454545;
+    }
+    
+    nav a:hover{
+        color: #AB392F;
+    }
+
+    .main1-category-item {
+        margin-right: 800px;
+    }
+    
 }
 
 @media screen and (min-width:1025px) and (max-width:1400px) {
@@ -272,14 +280,18 @@ nav a:hover{
       left: -40px;
   }
 
-  nav a{
-      text-decoration: none;
-      color: #454545;
-  }
-  
-  nav a:hover{
-      color: #AB392F;
-  }
+    nav a{
+        text-decoration: none;
+        color: #454545;
+    }
+    
+    nav a:hover{
+        color: #AB392F;
+    }
+
+    .main1-category-item {
+        margin-right: 800px;
+    }
 }
 
 @media (min-width:1000px) and (max-width:1200px) {
@@ -337,22 +349,27 @@ nav a:hover{
       color: #FBFFDA;
   }
 
-  .main1-search-icon2 {
-      display: block;
-      width: 34px;
-      height: 34px;
-      position: absolute;
-      right: 0;
-      bottom: -60px;
-      color: #FBFFDA;
-  }
-  
-  
-  nav input::placeholder {
-      text-decoration:none;
-      font-size: 20px;
-  }
-  
+
+    .main1-category-item {
+        margin-right: 800px;
+    }
+
+    .main1-search-icon2 {
+        display: block;
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        right: 0;
+        bottom: -60px;
+        color: #FBFFDA;
+    }
+    
+    
+    nav input::placeholder {
+        text-decoration:none;
+        font-size: 20px;
+    }
+    
 
   .navbar {
       --bs-navbar-brand-color: none;
@@ -369,15 +386,16 @@ nav a:hover{
       right: 0;
   }
 
-  .min-category2 {
-      width: 70px;
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      right: 0;
-      top: -40px;
-      margin-right: -5px;
-  }
+
+
+    .min-category2 {
+        width: 70px;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        top: -40px;
+    }
 
   .icon-box {
       width: 34px;
@@ -410,17 +428,22 @@ nav a:hover{
       flex-direction: row;
   }
 
-  .main1-logo {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 240px;
-      height: 66px;
-      margin-left: -45px;
-      margin-top: -33px;
-      background: url(./main1-asset/noonakitchen-logo-bage.png) no-repeat center center;
-      background-size: auto 66px;
-  }
+    .main1-category-item {
+        margin-right: 800px;
+    }
+
+    .main1-logo {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 240px;
+        height: 66px;
+        margin-left: -45px;
+        margin-top: -33px;
+        background: url(./noonakitchen-logo-bage.png) no-repeat center center;
+        background-size: auto 66px;
+    }
+
 
   .frm-nav-search  {
       font-size: 22px;
@@ -533,30 +556,35 @@ nav a:hover{
       flex-direction: row;
   }
 
-  .frm-nav-search  {
-      width: 390px;
-      height: 172px;
-      position: absolute;
-      top: -4px;
-      left: -210px;
-  }
-  
-  .main1-input-area {
-      position: relative;
-      text-align: center;
-      width: 10px;
-  }
-  
-  .main1-input-area2 {
-      border-bottom: 2px solid #FBFFDA;
-      padding-bottom: 5px;
-      width: 340px;
-      height: 40px;
-      position:relative;
-      right: 300px;
-      top: 93px;
-      padding-left: 8px;
-      margin-top: 10px;
+
+    .main1-category-item {
+        margin-right: 800px;
+    }
+
+    .frm-nav-search  {
+        width: 390px;
+        height: 172px;
+        position: absolute;
+        top: -4px;
+        left: -210px;
+    }
+    
+    .main1-input-area {
+        position: relative;
+        text-align: center;
+        width: 10px;
+    }
+    
+    .main1-input-area2 {
+        border-bottom: 2px solid #FBFFDA;
+        padding-bottom: 5px;
+        width: 340px;
+        height: 40px;
+        position:relative;
+        right: 300px;
+        top: 93px;
+        padding-left: 8px;
+        margin-top: 10px;
 
   }
 

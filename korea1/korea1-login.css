@@ -1,0 +1,1315 @@
+/* import */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 전체 설정 */
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+.content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex; /* 플렉스 레이아웃 추가 */
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center; /* 자식 요소를 가로로 가운데 정렬 */
+    word-break: keep-all;
+}
+
+/* nav */
+
+/* body, html {
+    border: none;
+    overflow: visible;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+} */
+
+.main1-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 13;
+    background: linear-gradient(to right,  #AB392F, rgba(120, 41, 34, 0.99));
+}
+
+.main1-first-line {
+    width: 1280px;
+    height: 105px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main1-second-line {
+    display: flex;
+    position: relative;
+    z-index: 31;
+}
+
+.main1-logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 240px;
+    height: 66px;
+    margin-left: 0px;
+    margin-top: -33px;
+    background: url(./assets/noonakitchen-logo-bage.png) no-repeat center center;
+    background-size: auto 66px;
+}
+
+.frm-nav-search  {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 13px;
+    width: 578px;
+}
+
+.main1-input-area {
+    width: 578px;
+    position: relative;
+    margin-top: -6px;
+}
+
+.main1-input-area2 {
+    width: 578px;
+    height: 50px;
+    padding-left: 9px;
+    margin-top: 12px;
+    text-align: left;
+    vertical-align: top;
+    background: none;
+    border-bottom: 2px solid #FBFFDA;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.main1-search-icon {
+    position: relative;
+    left: 540px;
+    bottom: 43px;
+    margin-right: 32px;
+    color: #FBFFDA;
+}
+
+.main1-search-icon2 {
+    display: none;
+}
+
+nav input::placeholder {
+    color: #FBFFDA;
+    font-size: 22px;
+    font-family: "Pretendard";
+}
+
+.btn-primary:hover {
+    background-color: #AB392F;
+    border-color: #AB392F;
+}
+
+.btn-primary {
+    background-color: #AB392F;
+    border-color: #AB392F;
+}
+
+.nav-link {
+    color: #454545;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #454545;
+    width: 135px;
+}
+
+.icon-box {
+    width: 34px;
+    height: 34px;
+    background-color: #AB392F;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box:hover {
+    background-color: #ca463a;
+}
+
+.icon-box2 {
+    width: 18px;
+    height: 18px;
+    background-color: #AB392F;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-second-line-son{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    float: left;
+    min-width: 220px;
+    font-size: 14px;
+    list-style: none;
+    -webkit-box-shadow: 0 0px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, .175);
+    z-index: 1050;
+}
+
+
+.main1-category-area1 {
+    width: 80px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.main1-category-area2 {
+    border-left: 1px solid #454545;
+    width: 140px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 33px;
+}
+
+.main1-category-area3 {
+    padding-left: 42px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    padding: 0 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #454545;
+}
+
+nav a:hover{
+    color: #AB392F;
+}
+
+.nav-link.active:hover{
+    color: #AB392F;
+}
+
+.nav-link:hover {
+    color: #AB392F;
+}
+
+.bg-body-tertiary {
+    width: 100%;
+    background-color: rgb(255 255 255) !important;
+}
+
+.main1-second-line-btn {
+    height: 38px;
+    border-radius: 17;
+    border: rgba(120, 41, 34, 0.91);
+    background: #782922e8;
+    font-weight: 600;
+    --bs-btn-active-bg:  #9e342a;
+    --bs-btn-active-border-color:  #9e342a;
+}
+
+.main1-second-line-btn:hover {
+    background: #AB392F;
+}
+
+.btn-mom {
+    width: 200px;
+    align-items: center;
+}
+
+
+.main1-input-area-dis, .main1-icon-category,.main1-search-icon2 {
+    display: none;
+}
+
+.bg-body-tertiary {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.main1-category-item {
+    margin-right: 800px;
+}
+
+.main1-second-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main1-container2 {
+    position: absolute;
+    width: 100%;
+}
+
+.nav-item.dropdown {
+     position: relative; 
+}
+
+
+@media screen and (min-width:1800) {
+  .main1-carousel-bg {
+      display: none;
+  }
+
+  nav a{
+    text-decoration: none;
+    color: #454545;
+  }
+  
+  nav a:hover{
+    color: #AB392F;
+  }
+
+    
+}
+
+@media screen and (min-width:1025px) and (max-width:1400px) {
+  .btn-mom {
+      width: 1000px;
+      position: absolute;
+  }
+
+  .main1-category-item {
+      position: relative;
+      left: -40px;
+  }
+
+  nav a{
+      text-decoration: none;
+      color: #454545;
+  }
+  
+  nav a:hover{
+      color: #AB392F;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1200px) {
+
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+  }
+
+  .main1-container {
+    height: 170px;
+  }
+
+  .main1-logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 240px;
+      height: 66px;
+      margin-left: 60px;
+      margin-top: -33px;
+      background: url(./assets/noonakitchen-logo-bage.png) no-repeat center center;
+      background-size: auto 66px;
+  }
+
+  .frm-nav-search  {
+      font-size: 22px;
+      padding-top: 10px;
+      padding-left: 13px;
+      width: 700px;
+      position: absolute;
+      top: 70px;
+  }
+  
+  .main1-input-area {
+      width: 700px;
+      position: relative;
+      margin-top: -6px;
+  }
+  
+  .main1-input-area2 {
+      width: 770px;
+      height: 50px;
+      padding-left: 15px;
+      margin-top: 12px;
+      text-align: left;
+      vertical-align: top;
+      background: none;
+      border-bottom: 2px solid #FBFFDA;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+  }
+  
+  .main1-search-icon {
+      position: relative;
+      left: 540px;
+      bottom: 43px;
+      margin-right: 32px;
+      color: #FBFFDA;
+  }
+
+  .main1-search-icon2 {
+      display: block;
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      right: 0;
+      bottom: -60px;
+      color: #FBFFDA;
+  }
+  
+  
+  nav input::placeholder {
+      text-decoration:none;
+      font-size: 20px;
+  }
+  
+
+  .navbar {
+      --bs-navbar-brand-color: none;
+      --bs-navbar-brand-hover-color: none;
+  }
+
+  .navbar,.navbar-expand-lg ,.bg-body-tertiary,.main1-search-icon, .dis-none, .main1-input-area-dis {
+      display: none;
+  }
+
+  .main1-input-area-dis2 {
+      display: block;
+      position: absolute;
+      right: 0;
+  }
+
+  .min-category2 {
+      width: 70px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      right: 0;
+      top: -40px;
+      margin-right: -5px;
+  }
+
+  .icon-box {
+      width: 34px;
+      height: 34px;
+      background-color:#782922e8;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0px
+  }
+  
+  .icon-box:hover {
+      background-color: #AB392F;
+  }
+
+  nav a{
+      text-decoration: none;
+      color: #454545;
+  }
+  
+  nav a:hover{
+      color: #AB392F;
+  }
+}
+
+@media (min-width:820px) and (max-width:1000px) {
+
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+  }
+
+  .main1-container {
+    height: 170px;
+  }
+
+  .main1-logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 240px;
+      height: 66px;
+      margin-left: -45px;
+      margin-top: -33px;
+      background: url(./assets/noonakitchen-logo-bage.png) no-repeat center center;
+      background-size: auto 66px;
+  }
+
+  .frm-nav-search  {
+      font-size: 22px;
+      padding-top: 10px;
+      padding-left: 13px;
+      width: 700px;
+      position: absolute;
+      top: 70px;
+  }
+  
+  .main1-input-area {
+      width: 700px;
+      position: relative;
+      margin-top: -6px;
+  }
+  
+  .main1-input-area2 {
+      width: 770px;
+      height: 50px;
+      padding-left: 15px;
+      margin-top: 12px;
+      text-align: left;
+      vertical-align: top;
+      background: none;
+      border-bottom: 2px solid #FBFFDA;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+  }
+  
+  .main1-search-icon {
+      position: relative;
+      left: 540px;
+      bottom: 43px;
+      margin-right: 32px;
+      color: #FBFFDA;
+  }
+
+  .main1-search-icon2 {
+      display: block;
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      right: 0;
+      bottom: -60px;
+      color: #FBFFDA;
+  }
+  
+  
+  nav input::placeholder {
+      text-decoration:none;
+      font-size: 20px;
+  }
+  
+
+  .navbar {
+      --bs-navbar-brand-color: none;
+      --bs-navbar-brand-hover-color: none;
+  }
+
+  .navbar,.navbar-expand-lg ,.bg-body-tertiary,.main1-search-icon, .dis-none, .main1-input-area-dis {
+      display: none;
+  }
+
+  .main1-input-area-dis2 {
+      display: block;
+      position: absolute;
+      right: 0;
+  }
+
+  .min-category2 {
+      width: 70px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      right: 0;
+      top: -40px;
+      margin-right: -5px;
+  }
+
+  .icon-box {
+      width: 34px;
+      height: 34px;
+      background-color:#782922e8;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0px
+  }
+  
+  .icon-box:hover {
+      background-color: #AB392F;
+  }
+
+  nav a{
+      text-decoration: none;
+      color: #454545;
+  }
+  
+  nav a:hover{
+      color: #AB392F;
+  }
+}
+
+
+@media screen and (max-width:820px) {
+
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+  }
+
+  .main1-container {
+    height: 170px;
+  }
+
+  .frm-nav-search  {
+      width: 390px;
+      height: 172px;
+      position: absolute;
+      top: -4px;
+      left: -210px;
+  }
+  
+  .main1-input-area {
+      position: relative;
+      text-align: center;
+      width: 10px;
+  }
+  
+  .main1-input-area2 {
+      border-bottom: 2px solid #FBFFDA;
+      padding-bottom: 5px;
+      width: 340px;
+      height: 40px;
+      position:relative;
+      right: 300px;
+      top: 93px;
+      padding-left: 8px;
+      margin-top: 10px;
+
+  }
+
+  .main1-search-icon2 {
+      display: block;
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      right: 5px;
+      bottom: 30px;
+      color: #FBFFDA;
+  }
+  
+  
+  nav input::placeholder {
+      text-decoration:none;
+      font-size: 19px;
+  }
+  
+
+  .navbar {
+      --bs-navbar-brand-color: none;
+      --bs-navbar-brand-hover-color: none;
+  }
+
+  .navbar,.navbar-expand-lg ,.bg-body-tertiary,.main1-search-icon, .dis-none, .main1-input-area-dis2 {
+      display: none;
+  }
+
+  .main1-input-area-dis {
+      display: block;
+      position: absolute;
+      right: 0;
+  }
+
+  .min-category2 {
+      width: 70px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      right: 0;
+      top: 35px;
+      margin-right: -5px;
+  }
+
+  .icon-box {
+      width: 34px;
+      height: 34px;
+      background-color:#782922e8;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0px
+  }
+  
+  .icon-box:hover {
+      background-color: #782922e8;
+  }
+
+  nav a{
+      text-decoration: none;
+      color: #454545;
+  }
+  
+  nav a:hover{
+      color: #AB392F;
+  }
+}
+
+/* 메인 사진 */
+.full-width-main-image {
+    display: block;
+    width: 100%;
+    height: auto; /* 비율 유지 */
+    padding: 0;
+}
+
+/* 태그 */
+.korea1-detailInfo .korea1-Tag{
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.korea1-Tag ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* 요소를 다음 줄로 넘기도록 설정 */
+    justify-content: left; /* 가로 정렬 간격 조정 */
+    gap: 25px 10px; /* 세로(gap의 첫 번째 값)와 가로 간격(gap의 두 번째 값) 설정 */
+    list-style: none; /* 리스트 아이템의 기본 점 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    margin: 0; /* 기본 마진 제거 */
+}
+
+.korea1-Tag a {
+    font-size: 20px;
+    line-height: 25px;
+    color: #777;
+    padding: 5px 20px 7px;
+    border: 1px solid #c1c1c1;
+    background: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.korea1-Tag a:hover {
+    background-color: #AB392F;
+    color: white;
+}
+
+.korea1-Tag{
+    position: relative;
+    text-align: center;
+}
+
+/* 로그아웃 */
+.user-info-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    width: 100%; /* 부모 요소에 맞게 가로 크기 설정 */
+    padding: 10px;
+    gap: 10px; /* 요소 간 간격 */
+    box-sizing: border-box; /* 패딩 포함 너비 계산 */
+  }
+  
+  .welcome-message {
+    font-size: 16px;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .logout-btn {
+    display: inline-block; /* 버튼이 가로로 정렬되도록 설정 */
+    width: 120px; /* 버튼의 고정된 너비 */
+    padding: 5px 10px; /* 버튼 내부 여백 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    vertical-align: middle; /* 텍스트 세로 정렬 */
+    line-height: normal; /* 텍스트 줄 간격 기본값 */
+    font-size: 14px; /* 글꼴 크기 */
+  }
+
+  /* 1600px ~ 1200px 화면 크기에서 왼쪽으로 이동 */
+    @media (max-width: 1600px) and (min-width: 1400px) {
+        .user-info-container {
+        justify-content: flex-start !important; /* 왼쪽 정렬 */
+        flex-wrap: nowrap; /* 요소가 한 줄로 정렬되도록 강제 */
+        padding-left: 700px; /* 왼쪽 여백 추가 */
+        }
+
+        .main1-category-item {
+            margin-right: auto;
+            
+        }
+
+    }
+    
+    @media (max-width: 1400px) and (min-width: 1200px) {
+        .user-info-container {
+            justify-content: flex-start !important; /* 왼쪽 정렬 */
+            flex-wrap: nowrap; /* 요소가 한 줄로 정렬되도록 강제 */
+            padding-left: 500px; /* 왼쪽 여백 추가 */
+            }
+
+        .main1-category-item {
+            margin-right: auto;
+            padding-left: 50px;
+        }
+    }
+
+    /* 텍스트와 이미지 스타일 */
+    .welcome-message {
+        font-size: 16px;
+        white-space: nowrap; /* 줄바꿈 방지 */
+    }
+    
+    .profile-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    .logout-btn {
+        padding: 5px 10px;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 14px;
+    }
+
+/* 구분선 */
+.first-divider {
+    width: 100%;
+    max-width: 768px;
+    height: 2px;  /* 구분선의 두께 */
+    background-color: #ccc;  /* 구분선 색상 */
+    margin: 50px 0;  /* 구분선 위 아래 여백 */
+}
+
+.divider {
+    width: 100%;
+    max-width: 768px;
+    height: 2px;  /* 구분선의 두께 */
+    background-color: #ccc;  /* 구분선 색상 */
+    margin: 50px 0;  /* 구분선 위 아래 여백 */
+}
+
+.last-divider {
+    width: 100%;
+    max-width: 1280px;
+    height: 2px;  /* 구분선의 두께 */
+    background-color: #ccc;  /* 구분선 색상 */
+    margin: 50px 50px;  /* 구분선 위 아래 여백 */
+}
+
+/* 음식 이름 및 음식 설명 */
+.food-title {
+    font-size: 45px;
+    color: #333;
+    margin-top: 80px;
+    font-weight: 700;
+}
+
+.korea1-detailInfo {
+    position: relative;
+    float: left;
+    max-width: 768px;
+    line-height: 1.5;
+}
+
+.korea1-detailInfo p{
+    font-size: 24px;
+    color: #666;
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+/* 레시피 재료 */
+.ingredientArea {
+    position: relative;
+    float: left;
+    width: 100%; /* 부모 요소의 너비에 맞춰 자동 조정 */
+    max-width: 768px; /* 최대 너비를 768px로 제한 */
+    line-height: 1.5;
+}
+
+.ingredient-title {
+    font-size: 35px;
+    color: #333;
+    font-weight: 700;
+}
+
+.ingredientArea dt{
+    font-size: 22px;
+    color: #AB392F;
+    margin-top: 30px;
+}
+.ingredientArea dd{
+    font-size: 22px;
+    color: #666;
+    font-weight: lighter;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.ingredientContent{
+    max-width: 768px;
+    line-height: 1.5;
+}
+
+/* 관련 제품 */
+.goods-Area {
+    position: relative;
+    float: left;
+    width: 100%; /* 부모 요소의 너비에 맞춰 자동 조정 */
+    max-width: 768px; /* 최대 너비를 768px로 제한 */
+    line-height: 1.5;
+}
+
+.goods-Area img {
+    margin: 20px 0;
+    position: relative;
+}
+
+.goods-title {
+    font-size: 35px;
+    color: #333;
+    font-weight: 700;
+}
+
+.goods-name{
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.goods-content{
+    max-width: 768px;
+    line-height: 1.5;
+    font-size: 22px;
+    color: #666;
+    font-weight: lighter;
+    margin-top: 10px;
+    text-align: center; /* 글자 가운데 정렬 */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-width-image {
+    display: block;
+    width: 100%;
+    height: auto; /* 비율 유지 */
+    transition: 1.0s ease; /* 부드러운 전환 효과 */
+    margin: 0px;
+    padding: 0;
+}
+
+.image-container:hover .full-width-image {
+    filter: brightness(1); /* 사진 어둡게 */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0; /* 기본적으로 숨김 */
+    background-color: rgba(0, 0, 0, 0.1); /* 반투명 검은 배경 */
+    transition: opacity 0.3s ease;
+    margin: 0;
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* hover 시 표시 */
+}
+
+.text-top {
+    position: absolute;
+    top: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.icon-center {
+    font-size: 40px; /* 아이콘 크기 */
+    margin-top: 10px;
+}
+
+/* 관련 레시피 */
+.relatedRecipeArea {
+    position: relative;
+    overflow: hidden; /* 이미지를 넘지 않도록 숨기기 */
+    float: left;
+    width: 100%; /* 부모 요소의 너비에 맞춰 자동 조정 */
+    max-width: 768px; /* 최대 너비를 768px로 제한 */
+    line-height: 1.5;
+}
+
+.relatedRecipe-title {
+    font-size: 35px;
+    color: #333;
+    font-weight: 700;
+}
+
+.relatedRecipe-name{
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.relatedRecipeContent{
+    max-width: 768px;
+    line-height: 1.5;
+    font-size: 22px;
+    color: #666;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.relatedRecipeArea img {
+    margin: 20px 0;
+    width: 100%;
+    transition: transform 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.relatedRecipeArea img:hover {
+    transform: scale(1.1); /* 이미지를 확대하는 효과 */
+}
+
+/* 만드는 방법 */
+.howToMakeArea {
+    position: relative;
+    float: left;
+    width: 100%; /* 부모 요소의 너비에 맞춰 자동 조정 */
+    max-width: 768px; /* 최대 너비를 768px로 제한 */
+    line-height: 1.5;
+}
+
+.howToMake-title {
+    font-size: 35px;
+    color: #333;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.howToMakeArea dt{
+    font-size: 28px;
+    color: #AB392F;
+    margin-top: 40px;
+    font-weight: 600;
+}
+.howToMakeArea dd{
+    font-size: 28px;
+    color: #666;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.howToMakeContent{
+    max-width: 768px;
+    line-height: 1.5;
+}
+
+/* 추천 레시피 */
+.recommended-recipe-Area {
+    position: relative;
+    overflow: hidden; /* 이미지를 넘지 않도록 숨기기 */
+    float: left;
+    width: 100%; /* 부모 요소의 너비에 맞춰 자동 조정 */
+    max-width: 1280px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.recommended-recipe-title {
+    font-size: 35px;
+    color: #333;
+    font-weight: 700;
+}
+
+.recommended-recipe-name{
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    text-align: left; /* 좌측 정렬 추가 */
+    margin-top: auto;
+}
+
+.recommended-recipe-Content {
+    max-width: 1280px;
+    line-height: 1.5;
+    font-size: 22px;
+    color: #666;
+    font-weight: lighter;
+    margin-top: 10px;
+    text-align: left; /* 좌측 정렬 유지 */
+    display: flex; /* 플렉스 레이아웃 유지 */
+    justify-content: flex-start; /* 가로 방향 왼쪽 정렬 */
+    gap: 8px; /* 아이템 간격 조정 */
+    align-items: center; /* 세로 방향 가운데 정렬 */
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    word-break: keep-all; /* 단어 단위로 줄바꿈 */
+    padding-left: 0px; /* 리스트 왼쪽 패딩 제거 */
+    flex-wrap: wrap; /* 플렉스 아이템 줄바꿈 허용 */
+}
+
+.recommended-recipe-Content li {
+    white-space: nowrap; /* 태그 단위로 줄바꿈 방지 */
+}
+
+.col-lg-3, .col-md-6, .col-sm-12 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.recommended-recipe-Area img {
+    margin: 20px 0;
+    width: 100%;
+    transition: transform 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.recommended-recipe-Area img:hover {
+    transform: scale(1.1); /* 이미지를 확대하는 효과 */
+}
+
+
+/* 기본 상태에서 detailInfoNav를 숨깁니다 */
+.detailInfoNav {
+    display: none; /* 기본적으로 숨김 */
+}
+
+/* 업버튼 */
+#detailFood_top{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    /* z-index: 6; */
+    display: none; /* 기본적으로 숨김 */
+}
+
+#detailFood_top:hover{
+    cursor: pointer;
+}
+
+/* 1280이하 스타일 */
+@media (max-width: 1280px) {
+.content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+
+/* 모바일 전용 스타일 */
+@media (max-width: 768px) {
+.content{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* 구분선 */
+.first-divider {
+    display: none;
+}
+
+.content {
+    overflow: visible; /* overflow 속성 확인 */
+}
+
+.detailInfoNav{
+    display: flex; /* 기본적으로 보여지도록 수정 */
+    position: sticky;
+    top: 0; /* 화면 상단에 고정 */
+    /* z-index: 10; 다른 요소 위에 보이도록 */
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0;
+    margin: 70px 0;
+    display: flex; /* 플렉스 레이아웃으로 설정 */
+    justify-content: space-around; /* 수평 가운데 정렬 (필요시 조정 가능) */
+    gap: 20px; /* 항목 간 간격 */
+    padding: 10px 20px; /* 상하좌우 여백 */
+    border-top: 5px solid #f8f9fa; /* 위쪽 선 (두껍게) */
+    border-bottom: 1px solid #f8f9fa; /* 아래쪽 선 (얇게) */
+}
+
+.detailInfoNav li {
+    display: inline-block; /* 리스트 아이템을 인라인 블록으로 설정 */
+    font-size: 21px; /* 텍스트 크기 조정 */
+    font-weight: 700;
+    cursor: pointer; /* 클릭 가능한 손 모양 커서 */
+}
+
+.detailInfoNav li:hover {
+    color: #AB392F; /* 호버 시 색상 변경 */
+}
+
+.detailInfoNav a {
+    display: inline-block; /* 리스트 아이템을 인라인 블록으로 설정 */
+    font-size: 21px; /* 텍스트 크기 조정 */
+    font-weight: 700;
+    cursor: pointer; /* 클릭 가능한 손 모양 커서 */
+    color: black;
+    text-decoration: none;
+}
+
+.detailInfoNav a:hover {
+    color: #AB392F; /* 호버 시 색상 변경 */
+}
+
+}
+
+/* footer */
+.footer-content{
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+    background: rgba(120, 41, 34, 0.81);
+    width: 100%;
+  }
+  .footer-row{
+    display: flex;
+  }
+  .second-content{
+    margin: 0 auto;
+    padding: 10px 0;
+    background: #AB392F;
+    width: 100%;  
+    flex-direction: column;
+    flex-wrap: wrap; 
+  }
+  .foot-first-line{
+    position: relative;
+    margin: 0 0;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    white-space: normal; 
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    bottom:0px;
+  }
+  .footer-container-fluid{
+    padding:0 150px;
+  }
+  
+  .footer-left {
+    text-align: left;
+    padding-top:20px;
+    flex: 1;
+  }
+  .footer-right{
+    text-align: right;
+    justify-content: flex-start;
+  }
+  footer{
+    color: white;
+    justify-content: flex-end;
+    padding-top:20px;
+  }
+  .share-button{
+    margin-bottom: 15px;
+    margin-right: 15px;
+    font-size: 30px;
+    margin-left: 9px;
+  }
+  .footer-m{
+    display:none;
+  }
+
+  .footer-right img {
+    margin-right: 35px;
+}
+  
+  @media screen and (max-width: 48rem){
+    
+    .footer-left {
+      text-align: center;
+      white-space: normal;
+    }
+    
+    .footer-right{
+      justify-content: center; 
+      text-align: center;
+    }
+
+    .second-content {
+      flex-direction: column; 
+      padding-bottom: 10px;
+  
+    }
+    .footer {
+      flex-direction: column; 
+      align-items: center; 
+    }
+    .footer-container-fluid {
+      padding-left: 15px; 
+      padding-right: 15px;
+    }
+    .text-center {
+      font-size: 1.2rem;
+      padding: 5px; 
+      line-height: 1.8;
+    }
+    .footer-row{
+      display: none;
+    }
+    .footer-m{
+      display: block;
+    }
+
+    .footer-right img {
+        margin-right: 0px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 1024px){
+    .footer-container-fluid {
+      padding-left: 15px; 
+      padding-right: 15px;
+    }
+  }
