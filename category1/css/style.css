@@ -1,0 +1,552 @@
+
+body {
+  font-family: 'Pretendard' !important;
+}
+
+
+
+
+
+
+
+
+
+/* quick-link */
+
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 1320px;
+  margin: 0 auto;
+  border-bottom: 2px solid #AB392F;
+  padding-bottom: 30px;
+
+  
+}
+.quick-wrap {
+  display: flex;
+  align-items: end;
+  padding-top: 30px;
+  gap: 80px;
+
+}
+.bookmark {
+  margin-top: 20px; 
+  width: 100%;
+  border-top: 2px solid #AB392F;
+  position: relative;
+  font-weight: 800;
+
+
+}
+.bookmark a{
+  color: #666666;
+}
+
+.star {
+  /*  */
+  right: 0;
+position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0  0 0 20px;
+    height: 30px;
+    border-radius: 1.5rem;
+    background: url("../img/star.png") no-repeat center left 0%;
+    background-size: 20px 20px;
+    transition: background 0.3s;
+    color: #000;
+    font-size: 14px;
+  
+    white-space: nowrap;
+}
+
+.bookmark a:hover.star {
+    background: url("../img/star-red.png") no-repeat center left;
+    background-size: 20px 20px;
+    color: #AB392F;
+   
+}
+a.quick-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* quick-link 아이콘 호버했을때  */
+
+span.image.all {
+  display: inline-block;
+  width: 92px;
+  height: 92px;
+  border-radius: 1.5rem;
+  background: url("../img/all-icon.png") no-repeat center;
+  background-size: cover;
+  transition: background 0.3s;
+}
+
+span.image.all:hover {
+  background: url('../img/all-icon-color.png') no-repeat center;
+  background-size: cover;
+}
+
+
+span.image.food {
+  display: inline-block;
+  width: 92px;
+  height: 92px;
+  border-radius: 1.5rem;
+  background: url("../img/food-icon.png") no-repeat center;
+  background-size: cover;
+  transition: background 0.3s;
+}
+
+span.image.food:hover {
+  background: url('../img/food-icon-color.png') no-repeat center;
+  background-size: cover;
+}
+
+
+
+.quick-wrap a:hover h4{
+  color: #AB392F;
+}
+
+
+
+.quick-item>h4 {
+    margin-top: 11px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #6a6a6a;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+
+
+.all-bg {
+  padding: 73px 0;
+  position: relative;
+  display: block;
+  clear: both;
+  text-align: center;
+  width: 100%;
+  background-color: #F3F3F3;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.main-title-txt {
+  position: relative;
+  top: -22px;
+
+}
+
+.all-bg::after {
+  content: '';
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  width: 200%;
+  height: 81px;
+  background: url(../img/bg.png) repeat-x;
+  background-size: contain;
+  animation: slide-bg 13s linear infinite;
+  z-index: 3;
+
+}
+
+@keyframes slide-bg {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+
+  }
+}
+
+.all-bg h2 {
+  font-size: 45px;
+  line-height: 45px;
+  color: #333;
+  text-align: center;
+  display: block;
+  
+}
+
+
+
+
+.all-bg h3{
+padding-top: 60px;
+color: #AB392F;
+font-size: 30px;
+
+
+}
+
+.main-sub-txt{
+  position: relative;
+  bottom: -22px;
+
+}
+
+
+/* food-txt */
+
+.food-txts .inner{
+margin: 0 auto;
+ max-width: 1320px; 
+}
+.food-txt{
+
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.food-txt-right a{  
+  position: relative;
+  padding-left: 15px; 
+
+  color: #333;
+  
+}
+
+.food-txt-right a.active::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url(../img/check-icon.gif) 
+  no-repeat center/contain;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+
+
+
+/* 카드 */
+
+
+  
+  .food-container {
+    max-width: 1320px; 
+    margin: 0 auto; 
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: calc(25% - 15px); /* 한 줄에 4개 (gap 포함) */
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    box-sizing: border-box; 
+    display: block; 
+  }
+
+
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.5s ease;
+  }
+  .card-image:hover {
+    transform: scale(1.1);
+ 
+  }
+  
+  .card-text {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-text h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .card-text p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+
+/* 푸터 시작 */
+
+.content{
+  margin: 0 auto;
+  padding: 10px 0;
+  position: relative;
+  background: rgba(120, 41, 34, 0.81);
+  width: 100%;
+}
+.footer-row{
+  display: flex;
+}
+.second-content{
+  margin: 0 auto;
+  padding: 10px 0;
+  background: #AB392F;
+  width: 100%;  
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+.foot-first-line{
+  position: relative;
+  margin: 0 0;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  white-space: normal; 
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  bottom:0px;
+}
+.footer-container-fluid{
+  padding:0 150px;
+}
+
+.footer-left {
+  text-align: left;
+  padding-top:20px;
+  flex: 1;
+}
+.footer-right{
+  text-align: right;
+  justify-content: flex-start;
+  margin-right: 20px;
+}
+
+.footer-right img{
+  margin-right: 35px;
+}
+
+footer{
+  color: white;
+  justify-content: flex-end;
+  padding-top:20px;
+}
+.share-button{
+  margin-bottom: 15px;
+  margin-right: 15px;
+  font-size: 30px;
+  margin-left: 9px;
+}
+.footer-m{
+  display:none;
+}
+
+
+
+
+
+
+
+/* ★★★★★★★★★★★★★★★★★★★★★
+★★★★★★★★★★★★★★★★★★★★★★★
+★★★★★★★★★★★★★★★★★★★ */
+/* 태블릿 */
+/* 화면이 720px 이하일 때 - 한 줄에 3개 */
+@media (max-width: 720px) {
+
+    a.quick-item {
+        align-items: center;
+        width: calc(33.333% - 0px);
+
+    }
+
+    .quick-wrap {
+      gap: 30px;
+    
+    }
+
+    .food-txts .inner{
+      margin: 0 auto;
+       max-width: calc(1320px - 20px); 
+      }
+    
+/* 전체 한,중,일,디 아이콘 */
+    span.image.all {
+      width: 70px;
+      height: 70px;
+    }
+
+    span.image.food {
+      width: 70px;
+      height: 70px;
+    }
+
+/*  */
+
+    .card {
+      width: calc(33.333% - 20px); 
+    }
+
+   
+
+.food-txts .inner{
+  max-width: calc(100% - 20px);
+
+  
+}
+
+/* .bookmark {
+  max-width: calc(100% - 20px);
+}
+.quick-link {
+  max-width: calc(100% - 20px);
+
+
+  
+} */
+ .star{
+  margin-right: 10px;
+ }
+  }
+  
+  /* 화면이 540px 이하일 때 - 한 줄에 2개 */
+  @media (max-width: 540px) {
+
+
+    .card {
+        width: calc(50% - 20px);
+        
+      }
+      .quick-wrap {
+
+        gap: 15px;
+      
+      }
+
+
+      .quick-link {
+        position: relative;
+        left: 0;
+        
+      }
+
+      .all-bg {
+        padding: 70px 0;
+
+      }
+
+
+
+
+
+      .main-title-txt {
+        top: -50px;
+    }
+    .main-sub-txt {
+      bottom: 0;
+  }
+
+      .all-bg h2 {
+        font-size: 35px;
+        line-height: 35px;
+
+      }
+      
+      
+      
+      .all-bg h3{
+      padding-top: 30px;
+      font-size: 20px;
+    
+      }
+
+    
+  }
+
+
+
+
+
+
+
+
+
+  /* 푸터 */
+  @media screen and (max-width: 48rem){
+  
+    .footer-left {
+      text-align: center;
+      white-space: normal;
+    }
+    
+    .footer-right{
+      justify-content: center; 
+      text-align: center;
+    }
+    .second-content {
+      flex-direction: column; 
+      padding-bottom: 10px;
+  
+    }
+    .footer {
+      flex-direction: column; 
+      align-items: center; 
+    }
+    .footer-container-fluid {
+      padding-left: 15px; 
+      padding-right: 15px;
+    }
+    .text-center {
+      font-size: 1.2rem;
+      padding: 5px; 
+      line-height: 1.8;
+    }
+    .footer-row{
+      display: none;
+    }
+    .footer-m{
+      display: block;
+    }
+  
+    .footer-right img{
+      margin: 0;
+    }
+
+  }
+  
+  @media screen and (max-width: 1024px){
+    .footer-container-fluid {
+      padding-left: 15px; 
+      padding-right: 15px;
+    }
+  }

@@ -1,258 +1,3 @@
-.mall-image {
-  width: 100%;
-  height: 405px;
-  background-image: url('./image/maincook.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  align-items: center; 
-  text-align: center;
-}
-.red-bold{
-  color:darkred;
-  font-size: 35px;
-  font-weight: 700;
-}
-.easier-text{
-  font-size: 38px;
-  color: #333;
-  font-weight: 600;
-}
-.btn{
-  border-radius: 30px;
-  font-weight: 500;
-}
-
-@media screen and (max-width: 48rem){
-  .mall .mall-image{
-    background-size: cover;
-    align-items: center; 
-    text-align: center;
-    height:100%;
-    width:auto;
-  }
-}
-
-
-.card-img-top {
-  width: 100%;
-  height: 250px; 
-  object-fit: cover; 
-}
-
-.star-book{
-  margin-top: 40px;
-  margin-bottom: 10px;
-  border-color: rgba(120, 41, 34, 0.81);
-}
-
-.star-book:hover {
-  background-color: rgba(120, 41, 34, 0.81);
-  border-color: rgba(120, 41, 34, 0.81);
-}
-.star-book:active {
-  background-color: rgba(120, 41, 34, 0.81);
-  border-color: rgba(120, 41, 34, 0.81);
-}
-.custom-card{
-  border-width: 2px;
-  border-color: #AB392F;
-}
-
-.star-icon {
-  display: inline-block;
-  margin-right: 8px;
-  font-size: 1.2rem;
-  color: rgba(120, 41, 34, 0.81);
-  cursor: pointer;
-}
-.star-icon .fa-regular {
-  color: rgba(120, 41, 34, 0.81); 
-}
-.star-icon .fa-solid {
-  display: none; /* 기본적으로 채워진 별은 숨김 */
-  color: rgba(120, 41, 34, 0.81); /* 채워진 별 색상 */
-}
-.star-icon:hover .fa-regular {
-  display: none; /* 비어있는 별 숨김 */
-}
-.star-icon:hover .fa-solid {
-  display: inline-block; /* 채워진 별 표시 */
-}
-
-
-
-.card-img-top {
-  width: 100%;
-  height: 250px; 
-  object-fit: cover; 
-}
-
-.star-book{
-  margin-top: 40px;
-  margin-bottom: 10px;
-  border: 1px solid  rgba(120, 41, 34, 0.81);
-}
-
-.star-book:hover {
-  background-color: rgba(120, 41, 34, 0.81);
-  border-color: rgba(120, 41, 34, 0.81);
-}
-.star-book:active {
-  background-color: rgba(120, 41, 34, 0.81);
-  border-color: rgba(120, 41, 34, 0.81);
-}
-.custom-card{
-  border-width: 2px;
-  border-color: #AB392F;
-}
-
-.star-icon {
-  display: inline-block;
-  margin-right: 8px;
-  font-size: 1.2rem;
-  color: rgba(120, 41, 34, 0.81);
-  cursor: pointer;
-}
-.star-icon .fa-regular {
-  color: rgba(120, 41, 34, 0.81); 
-}
-.star-icon .fa-solid {
-  display: none; /* 기본적으로 채워진 별은 숨김 */
-  color: rgba(120, 41, 34, 0.81); /* 채워진 별 색상 */
-}
-.star-icon:hover .fa-regular {
-  display: none; /* 비어있는 별 숨김 */
-}
-.star-icon:hover .fa-solid {
-  display: inline-block; /* 채워진 별 표시 */
-}
-
-
-
-
-/* 바닥 */
-.content{
-  margin: 0 auto;
-  padding: 10px 0;
-  position: relative;
-  background: rgba(120, 41, 34, 0.81);
-  width: 100%;
-}
-.footer-row{
-  display: flex;
-}
-.second-content{
-  margin: 0 auto;
-  padding: 10px 0;
-  background: #AB392F;
-  width: 100%;  
-  flex-direction: column;
-  flex-wrap: wrap; 
-}
-.foot-first-line{
-  position: relative;
-  margin: 0 0;
-  width: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  display: inline-block;
-  white-space: normal; 
-  text-align: center;
-  word-wrap: break-word;
-}
-
-.footer{
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  bottom:0px;
-}
-.footer-container-fluid{
-  padding:0 150px;
-}
-
-.footer-left {
-  text-align: left;
-  padding-top:20px;
-  flex: 1;
-}
-.footer-right{
-  text-align: right;
-  justify-content: flex-start;
-}
-footer{
-  color: white;
-  justify-content: flex-end;
-  padding-top:20px;
-}
-.share-button{
-  margin-bottom: 15px;
-  margin-right: 15px;
-  font-size: 30px;
-  margin-left: 9px;
-}
-.footer-m{
-  display:none;
-}
-
-.footer-right img{
-  margin-right: 35px;
-}
-
-@media screen and (max-width: 48rem){
-  
-  .footer-left {
-    text-align: center;
-    white-space: normal;
-  }
-  
-  .footer-right{
-    justify-content: center; 
-    text-align: center;
-  }
-  .second-content {
-    flex-direction: column; 
-    padding-bottom: 10px;
-
-  }
-  .footer {
-    flex-direction: column; 
-    align-items: center; 
-  }
-  .footer-container-fluid {
-    padding-left: 15px; 
-    padding-right: 15px;
-  }
-  .text-center {
-    font-size: 1.2rem;
-    padding: 5px; 
-    line-height: 1.8;
-  }
-  .footer-row{
-    display: none;
-  }
-  .footer-m{
-    display: block;
-  }
-  .footer-right img{
-    margin-right: 0px;
-  }
-}
-
-@media screen and (max-width: 1024px){
-  .footer-container-fluid {
-    padding-left: 15px; 
-    padding-right: 15px;
-  }
-}
-/* 바닥 */
-
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 body, html {
@@ -291,7 +36,7 @@ body, html {
     height: 66px;
     margin-left: 0px;
     margin-top: -33px;
-    background: url(./image/long-logo.png) no-repeat center center;
+    background: url(../img/long-logo.png) no-repeat center center;
     background-size: auto 66px;
 }
 
@@ -312,7 +57,7 @@ body, html {
     width: 578px;
     height: 50px;
     padding-left: 9px;
-    margin-top: 12px;
+    margin-top: 19px;
     text-align: left;
     vertical-align: top;
     background: none;
@@ -509,7 +254,6 @@ nav a:hover{
       display: none;
   }
 
-
   nav a{
     text-decoration: none;
     color: #454545;
@@ -517,22 +261,6 @@ nav a:hover{
   
   nav a:hover{
     color: #AB392F;
-  }
-
-  .carousel-item {
-    position: relative;
-    float: left;
-    max-height: 100px;
-    width: 100%;
-    margin-right: 0px;
-  }
-
-  .main-text1, .main-text2, .main-text3, .main-text4, .main-text3-img {
-    display: none;
-  }
-
-  .main-carousel-bg, .noona-img, .noona-img2 {
-    display: none;
   }
 
     
@@ -549,15 +277,6 @@ nav a:hover{
       left: -40px;
   }
 
-  .carousel-item {
-    position: relative;
-    float: left;
-    max-height: 500px;
-    width: 100%;
-    margin-right: 0px;
-  }
-
-
   nav a{
       text-decoration: none;
       color: #454545;
@@ -566,14 +285,6 @@ nav a:hover{
   nav a:hover{
       color: #AB392F;
     }
-
-    .main-text1, .main-text2, .main-text3, .main-text4, .main-text3-img {
-      display: none;
-    }
-
-    .main-carousel-bg, .noona-img, .noona-img2 {
-      display: none;
-    }
 }
 
 @media (min-width:1000px) and (max-width:1200px) {
@@ -581,15 +292,6 @@ nav a:hover{
   .navbar-expand-lg .navbar-nav {
       flex-direction: row;
   }
-
-  .carousel-item {
-    position: relative;
-    float: left;
-    max-height: 500px;
-    width: 100%;
-    margin-right: 0px;
-  }
-
 
   .main1-container {
     height: 170px;
@@ -603,7 +305,7 @@ nav a:hover{
       height: 66px;
       margin-left: 60px;
       margin-top: -33px;
-      background: url(./image/long-logo.png) no-repeat center center;
+      background: url(../img/long-logo.png) no-repeat center center;
       background-size: auto 66px;
   }
 
@@ -708,14 +410,6 @@ nav a:hover{
   
   nav a:hover{
       color: #AB392F;
-  }
-
-  .main-text1, .main-text2, .main-text3, .main-text4, .main-text3-img {
-    display: none;
-  }
-
-  .main-carousel-bg, .noona-img, .noona-img2 {
-    display: none;
   }
 }
 
@@ -729,14 +423,6 @@ nav a:hover{
     height: 170px;
   }
 
-  .carousel-item {
-    position: relative;
-    float: left;
-    max-height: 400px;
-    width: 100%;
-    margin-right: 0px;
-  }
-
   .main1-logo {
       position: absolute;
       top: 50%;
@@ -745,7 +431,7 @@ nav a:hover{
       height: 66px;
       margin-left: -45px;
       margin-top: -33px;
-      background: url(./image/long-logo.png) no-repeat center center;
+      background: url(../img/long-logo.png) no-repeat center center;
       background-size: auto 66px;
   }
 
@@ -851,14 +537,6 @@ nav a:hover{
   nav a:hover{
       color: #AB392F;
   }
-
-  .main-text1, .main-text2, .main-text3, .main-text4, .main-text3-img {
-    display: none;
-  }
-
-  .main-carousel-bg, .noona-img, .noona-img2 {
-    display: none;
-  }
 }
 
 
@@ -870,14 +548,6 @@ nav a:hover{
 
   .main1-container {
     height: 170px;
-  }
-
-  .carousel-item {
-    position: relative;
-    float: left;
-    max-height: 300px;
-    width: 100%;
-    margin-right: 0px;
   }
 
   .frm-nav-search  {
@@ -972,153 +642,18 @@ nav a:hover{
   nav a:hover{
       color: #AB392F;
   }
-
-  .main-text1, .main-text2, .main-text3, .main-text4, .main-text3-img {
-    display: none;
-  }
-
-  .main-carousel-bg, .noona-img, .noona-img2 {
-    display: none;
-  }
-}
-
-@media screen and (max-width:520px) {
-  .carousel-item {
-    position: relative;
-    float: left;
-    max-height: 200px;
-    width: 100%;
-    margin-right: 0px;
-  }
-
-  .main-text1, .main-text2, .main-text3, .main-text4, .main-text3-img {
-    display: none;
-  }
-
-  .main-carousel-bg, .noona-img, .noona-img2 {
-    display: none;
-  }
-  
-}
-
-.main-carousel-text {
-  position: relative;
-  bottom: 35em;
-  left: 1100px;
-  width: 500px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: white;
-}
-
-.main-text1 {
-  font-weight: 700;
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, .175);
-  font-size: 34px;
-}
-
-.main-text2 {
-  font-weight: 700;
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, .175);
-  font-size: 53px;
-}
-
-.main-text3 {
-  padding-top: 25px;
-  color: #454545;
-  font-weight: 400;
-}
-
-.main-text3-img {
-  border-radius: 30px;
-  background-color: white;
-  padding: 5px;
-  border: 2px solid rgb(44, 43, 43);
-}
-
-.carousel-item {
-  position: relative;
-  display: none;
-  float: left;
-  width: 100%;
-  margin-right: 0px;
-  height: 900px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transition: transform .6s ease-in-out;
-}
-
-
-.main-text4 {
-  width: 250px;
-  height: 45px;
-  border-radius: 10px;
-  background-color: #AB392F;
-  color: white;
-  font-weight: 700;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 100% 100%;
-  position: absolute;
-  bottom: 65%;
-}
-
-.carousel-inner {
-  position: relative;
 }
 
 #detailFood_top{
-  padding: 20px;
-  position: fixed;
-  right: 10px;
-  bottom: 20px;
-  z-index: 6; 
-  display: none;
-}
-
-#detailFood_top:hover{
-  cursor: pointer;
-}
-
-.main-carousel-bg {
-  position: relative;
-  right: 1000px;
-  bottom: 128px;
-  width: 400px;
-  width: 400px;
-}
-
-.noona-img{
-  position: absolute;
-  width: 50px;
-  width: 50px;
-  bottom: -255px;
-  left: -817px;
-  transition: all 1s ease;
-}
-
-.noona-img2 {
-  display: none;
-  position: absolute;
-  top: -400px;
-  right: 100px;
-  width: 1000px;
-  transition: all 1s ease;
-}
-
-.noona-img:hover {
-  transform: scale(1.2) ;
-}
-
-.noona-love:hover .noona-img2 {
-  display: block;
-  transition: all 1s ease;
-}
+    padding: 20px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 6; 
+    display: none;
+  }
+  
+  #detailFood_top:hover{
+    cursor: pointer;
+  }
+  
